@@ -1,0 +1,374 @@
+/* Allgemeine Stile */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #edf3ec;
+    color: #233d2e;
+    line-height: 1.5;
+}
+
+h1 {
+    margin: 0;
+    font-size: 3rem;
+    font-weight: 400;
+    text-align: center;
+    line-height: 1.2;
+}
+
+a {
+    text-decoration: none;
+    color: #233d2e;
+}
+
+a:hover {
+    color: #467a5a;
+}
+
+/* Header */
+.main-header {
+    background-color: #edf3ec;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-bottom: 1px solid #ccc;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.nav-left {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-left li {
+    font-size: 1rem;
+}
+
+.menu-toggle {
+    display: none; /* Standardmäßig versteckt */
+    font-size: 2rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #233d2e;
+}
+
+.logo {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.register {
+    display: flex;
+    align-items: center;
+}
+
+.btn-register {
+    background-color: #233d2e;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.btn-register:hover {
+    background-color: #467a5a;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    height: 100vh; /* Die Sektion nimmt 100% der Höhe des Displays ein */
+    display: flex;
+    align-items: center; /* Vertikale Zentrierung */
+    justify-content: center; /* Horizontale Zentrierung */
+    overflow: hidden;
+    text-align: center;
+    background-color: #edf3ec; /* Heller Hintergrund */
+}
+
+.slogan-wrapper {
+    transform: rotate(-5deg); /* Leichte Schrägstellung */
+}
+
+.slogan {
+    font-size: 6rem;
+    font-weight: bold;
+    color: #233d2e; /* Dunkler Text passend zum hellen Hintergrund */
+    line-height: 1.2;
+    text-transform: uppercase; /* Großbuchstaben */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Schatten für besseren Kontrast */
+}
+
+.slogan span {
+    display: block; /* Zeilenumbruch */
+}
+/* Hero Section Schreibmaschinen-Effekt */
+#typing-text {
+    display: inline-block;
+    white-space: pre-wrap; /* Zeilenumbrüche beachten */
+    overflow: hidden;
+    border-right: 2px solid #233d2e; /* Blinker-Effekt */
+}
+
+/* Blinker für die Schreibmaschine */
+.blinking-cursor {
+    display: inline-block;
+    font-size: 3rem;
+    animation: blink 0.7s steps(2, start) infinite;
+    margin-left: 0; /* Keine zusätzlichen Abstände */
+}
+
+/* Keyframes für die Blink-Animation */
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
+
+
+/* Über Uns Section */
+.about-us {
+    position: relative;
+    padding: 60px 20px;
+    background: white; /* Weißer Hintergrund für den unteren Teil */
+}
+
+.about-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 300px; /* Höhe des oberen Farbhintergrunds */
+    background: #edf3ec; /* Farbton passend zur Website */
+    z-index: 1;
+    clip-path: polygon(0 0, 100% 0, 100% 50%, 0 70%); /* Übergang nach der Hälfte des Bildes */
+}
+
+.about-content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.about-content h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #233d2e;
+    margin-bottom: 20px;
+}
+
+.about-image-wrapper {
+    position: relative;
+    overflow: hidden;
+    width: 80%; /* Breite des Bildes */
+    max-width: 600px; /* Maximalbreite */
+    margin: 20px auto; /* Zentriert */
+    border-radius: 8px; /* Abgerundete Ecken */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sanfter Schatten */
+}
+
+.about-image {
+    width: 100%;
+    height: auto; /* Seitenverhältnis bleibt erhalten */
+    display: block;
+}
+
+.about-content p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Service Section mit gewünschter Hintergrundfarbe */
+.services {
+    background-color: #36554A; /* Dunkles Grün */
+    color: white; /* Weißer Text */
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.services-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left; /* Text linksbündig für bessere Lesbarkeit */
+}
+
+.services h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: white;
+    text-align: center; /* Titel bleibt zentriert */
+}
+
+.services h3 {
+    font-size: 1.5rem;
+    margin: 20px 0 10px;
+    color: #edf3ec; /* Heller Text für Subheading */
+}
+
+.services p {
+    font-size: 1rem;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.services ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.services li {
+    font-size: 1rem;
+    margin-bottom: 15px;
+    color: white;
+    position: relative;
+    line-height: 1.6;
+}
+
+/* Punkte vor jedem Listeneintrag */
+.services li::before {
+    content: "•"; /* Punkt vor jedem Listeneintrag */
+    color: #edf3ec; /* Heller Punkt */
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+/* Kontakt Section */
+.contact {
+    background-color: #edf3ec; /* Gleicher Farbton wie vorher verwendet */
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.contact-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.contact h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #233d2e; /* Dunkler Farbton für den Titel */
+}
+
+.contact p {
+    font-size: 1rem;
+    line-height: 1.8;
+    margin-bottom: 30px;
+    color: #555; /* Dezenter Farbton für den Text */
+}
+
+.contact-icons {
+    display: flex;
+    justify-content: center; /* Zentriert Icons */
+    gap: 20px; /* Abstand zwischen den Icons */
+    flex-wrap: wrap; /* Sicherstellen, dass Icons umbrechen können */
+}
+
+.contact-icon {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+}
+
+.contact-icon img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s, opacity 0.3s;
+}
+
+.contact-icon:hover img {
+    transform: scale(1.1); /* Vergrößerung bei Hover */
+    opacity: 0.8; /* Leichte Transparenz bei Hover */
+}
+
+/* Responsive Anpassung */
+@media (max-width: 768px) {
+    /* Navbar */
+    .menu-toggle {
+        display: block; /* Zeige Hamburger-Menü */
+    }
+
+    .nav-left {
+        display: none; /* Standardmäßig versteckt */
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background: #edf3ec;
+        width: 200px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 10px;
+    }
+
+    .nav-left.show {
+        display: flex; /* Zeige Menü bei Aktivierung */
+    }
+
+    .nav-left li {
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    /* Kontaktbereich */
+    .contact-icons {
+        flex-direction: row; /* Icons bleiben nebeneinander */
+        justify-content: center; /* Zentriert Icons */
+        gap: 15px;
+    }
+
+    .contact-icon {
+        width: 40px; /* Kleinere Icons */
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-icons {
+        flex-direction: row; /* Icons bleiben nebeneinander */
+        justify-content: center;
+    }
+
+    .contact-icon {
+        width: 30px; /* Noch kleinere Icons */
+    }
+}
+@media (max-width: 768px) {
+    .slogan {
+        font-size: calc(7vw + 1rem); /* Größere Schrift für kleine Bildschirme */
+        line-height: 1.1; /* Reduzierter Zeilenabstand */
+    }
+
+    .slogan-wrapper {
+        max-width: 100%; /* Füllt den Bildschirm aus */
+    }
+}
+
+@media (max-width: 480px) {
+    .slogan {
+        font-size: calc(8vw + 1rem); /* Noch größere Schriftgröße */
+        line-height: 1.1;
+    }
+}
+
