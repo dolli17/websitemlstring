@@ -253,6 +253,255 @@ a:hover {
     margin-left: -1em;
 }
 
+/* FAQ Section */
+.faq {
+    background-color: #edf3ec; /* Heller Hintergrund, passend zum bestehenden Design */
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.faq h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #233d2e;
+    margin-bottom: 30px;
+}
+
+/* FAQ Section */
+.faq {
+    background-color: #edf3ec; /* Heller Hintergrund, passend zum bestehenden Design */
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.faq h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #233d2e;
+    margin-bottom: 30px;
+}
+
+/* FAQ-Items */
+.faq-item {
+    margin-bottom: 20px;
+    text-align: left;
+    max-width: 800px;
+    margin: 20px auto;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.faq-question {
+    width: 100%;
+    padding: 15px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #233d2e;
+    background: none;
+    border: none;
+    text-align: left;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.faq-toggle {
+    font-size: 1.5rem;
+    color: #467a5a; /* Grüner Farbton */
+    transition: transform 0.3s ease;
+}
+
+.faq-answer {
+    padding: 15px 20px;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #555;
+    display: none; /* Standardmäßig ausgeblendet */
+    background-color: #f9f9f9;
+}
+
+.faq-item.open .faq-answer {
+    display: block; /* Antwort einblenden */
+}
+
+.faq-item.open .faq-toggle {
+    transform: rotate(45deg); /* Symbol von "+" zu "x" ändern */
+    color: #d9534f; /* Rot für geschlossenes Symbol */
+}
+
+/* Responsives Design */
+@media (max-width: 768px) {
+    /* Überschrift kleiner */
+    .faq h2 {
+        font-size: 1.8rem;
+        margin-bottom: 20px;
+    }
+
+    /* Fragen und Antworten schmaler und kompakter */
+    .faq-item {
+        max-width: 100%;
+        margin: 15px auto;
+    }
+
+    .faq-question {
+        font-size: 0.95rem; /* Kleinere Schrift für Fragen */
+        padding: 10px 15px;
+    }
+
+    .faq-answer {
+        font-size: 0.85rem; /* Kleinere Schrift für Antworten */
+        padding: 10px 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Überschrift noch kompakter */
+    .faq h2 {
+        font-size: 1.6rem;
+    }
+
+    /* Fragen und Antworten gut lesbar auf schmalen Geräten */
+    .faq-question {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+
+    .faq-answer {
+        font-size: 0.8rem;
+        padding: 10px;
+    }
+
+    .faq-toggle {
+        font-size: 1.3rem; /* Kleinere Plus-/Minus-Icons */
+    }
+}
+
+/* Allgemeine Stile für die Reviews-Section */
+.reviews {
+    background-color: #f9f9f9; /* Heller Hintergrund */
+    padding: 60px 20px; /* Innenabstand */
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.reviews h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #233d2e; /* Dunkler Text */
+}
+
+/* Slider-Bereich */
+.review-slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out; /* Animation zwischen Bewertungen */
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.review-item {
+    flex: 0 0 100%; /* Zeigt nur eine Bewertung gleichzeitig */
+    opacity: 0; /* Unsichtbar standardmäßig */
+    transform: scale(0.8); /* Kleinere Größe als Animationseffekt */
+    transition: opacity 0.5s, transform 0.5s; /* Animation für Übergänge */
+    display: none; /* Verhindert Platzhalter-Effekte */
+    text-align: center;
+}
+
+.review-item.active {
+    display: block; /* Nur die aktive Bewertung wird sichtbar gemacht */
+    opacity: 1; /* Voll sichtbar */
+    transform: scale(1); /* Originalgröße */
+}
+
+/* Texte der Bewertungen */
+.review-text {
+    font-size: 1.5rem; /* Größerer, hervorstechender Text */
+    font-weight: bold;
+    color: #233d2e; /* Dunkler Text */
+    margin-bottom: 10px;
+}
+
+.review-detail {
+    font-size: 1rem; /* Standardgröße für Details */
+    font-style: italic;
+    margin-bottom: 10px;
+    color: #555; /* Dezenter Farbton für Detailtexte */
+}
+
+.review-name {
+    font-size: 0.9rem; /* Kleinerer Name */
+    color: #467a5a; /* Grüner Farbton */
+    margin-bottom: 10px;
+    display: block;
+}
+
+/* Sterne-Bewertung */
+.stars {
+    font-size: 1.5rem; /* Größe der Sterne */
+    color: #FFD700; /* Goldene Sterne */
+}
+
+/* Navigationsbuttons */
+.review-nav {
+    margin-top: 20px; /* Abstand zur Bewertung */
+}
+
+.review-nav button {
+    background: none;
+    border: none;
+    font-size: 2rem; /* Größere Buttons */
+    cursor: pointer;
+    color: #233d2e; /* Dunkle Farbe */
+    margin: 0 10px; /* Abstand zwischen den Buttons */
+}
+
+.review-nav button:hover {
+    color: #467a5a; /* Farbe ändern bei Hover */
+}
+
+/* Responsive Anpassungen */
+@media (max-width: 768px) {
+    .review-text {
+        font-size: 1.2rem; /* Kleinere Schrift für Texte */
+    }
+
+    .review-detail {
+        font-size: 0.9rem; /* Kleinere Detailtexte */
+    }
+
+    .review-nav button {
+        font-size: 1.5rem; /* Kleinere Navigationsbuttons */
+    }
+}
+
+@media (max-width: 480px) {
+    .review-text {
+        font-size: 1rem; /* Noch kleinere Texte für mobile Geräte */
+    }
+
+    .review-detail {
+        font-size: 0.85rem; /* Anpassung für schmale Geräte */
+    }
+
+    .review-name {
+        font-size: 0.8rem; /* Kleinere Namen */
+    }
+
+    .stars {
+        font-size: 1.2rem; /* Kleinere Sterne */
+    }
+}
+
+
+
 /* Kontakt Section */
 .contact {
     background-color: #edf3ec; /* Gleicher Farbton wie vorher verwendet */
