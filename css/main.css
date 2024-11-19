@@ -381,122 +381,127 @@ a:hover {
     }
 }
 
-/* Allgemeine Stile für die Reviews-Section */
-.reviews {
-    background-color: #f9f9f9; /* Heller Hintergrund */
-    padding: 60px 20px; /* Innenabstand */
+/* Bewertungen-Container */
+.reviews-section {
+    background-color: #edf3ec; /* Gleicher Hintergrund wie die FAQ */
+    padding: 60px 20px;
     text-align: center;
-    position: relative;
-    overflow: hidden;
 }
 
-.reviews h2 {
-    font-size: 2rem;
+.reviews-section h2 {
+    font-size: 2.5rem;
     font-weight: bold;
+    color: #233d2e; /* Passend zum Design */
+    margin-bottom: 30px;
+}
+
+.reviews-slider {
+    text-align: center;
+    margin: 50px auto;
+    max-width: 800px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.review {
     margin-bottom: 20px;
-    color: #233d2e; /* Dunkler Text */
 }
 
-/* Slider-Bereich */
-.review-slider {
-    display: flex;
-    transition: transform 0.5s ease-in-out; /* Animation zwischen Bewertungen */
-    width: 100%;
-    overflow: hidden;
-    position: relative;
-}
-
-.review-item {
-    flex: 0 0 100%; /* Zeigt nur eine Bewertung gleichzeitig */
-    opacity: 0; /* Unsichtbar standardmäßig */
-    transform: scale(0.8); /* Kleinere Größe als Animationseffekt */
-    transition: opacity 0.5s, transform 0.5s; /* Animation für Übergänge */
-    display: none; /* Verhindert Platzhalter-Effekte */
-    text-align: center;
-}
-
-.review-item.active {
-    display: block; /* Nur die aktive Bewertung wird sichtbar gemacht */
-    opacity: 1; /* Voll sichtbar */
-    transform: scale(1); /* Originalgröße */
-}
-
-/* Texte der Bewertungen */
 .review-text {
-    font-size: 1.5rem; /* Größerer, hervorstechender Text */
+    font-size: 1.2rem;
     font-weight: bold;
-    color: #233d2e; /* Dunkler Text */
+    color: #233d2e;
+    margin-bottom: 10px;
+}
+
+.review-stars {
+    color: #467a5a;
     margin-bottom: 10px;
 }
 
 .review-detail {
-    font-size: 1rem; /* Standardgröße für Details */
-    font-style: italic;
-    margin-bottom: 10px;
-    color: #555; /* Dezenter Farbton für Detailtexte */
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 20px;
+    line-height: 1.6;
 }
 
 .review-name {
-    font-size: 0.9rem; /* Kleinerer Name */
-    color: #467a5a; /* Grüner Farbton */
-    margin-bottom: 10px;
-    display: block;
+    font-size: 0.9rem;
+    color: #777;
+    font-style: italic;
 }
 
-/* Sterne-Bewertung */
-.stars {
-    font-size: 1.5rem; /* Größe der Sterne */
-    color: #FFD700; /* Goldene Sterne */
+/* Buttons */
+.reviews-controls {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
 }
 
-/* Navigationsbuttons */
-.review-nav {
-    margin-top: 20px; /* Abstand zur Bewertung */
-}
-
-.review-nav button {
-    background: none;
+.reviews-controls button {
+    background-color: #467a5a;
+    color: white;
+    padding: 10px 20px;
     border: none;
-    font-size: 2rem; /* Größere Buttons */
+    border-radius: 5px;
     cursor: pointer;
-    color: #233d2e; /* Dunkle Farbe */
-    margin: 0 10px; /* Abstand zwischen den Buttons */
+    transition: background-color 0.3s ease;
 }
 
-.review-nav button:hover {
-    color: #467a5a; /* Farbe ändern bei Hover */
+.reviews-controls button:hover {
+    background-color: #36554A;
 }
 
-/* Responsive Anpassungen */
+/* Responsive Design */
 @media (max-width: 768px) {
+    .reviews-slider {
+        max-width: 90%;
+    }
+
     .review-text {
-        font-size: 1.2rem; /* Kleinere Schrift für Texte */
+        font-size: 1rem;
     }
 
     .review-detail {
-        font-size: 0.9rem; /* Kleinere Detailtexte */
+        font-size: 0.9rem;
     }
 
-    .review-nav button {
-        font-size: 1.5rem; /* Kleinere Navigationsbuttons */
+    .review-stars {
+        font-size: 0.9rem;
+    }
+
+    .review-name {
+        font-size: 0.85rem;
+    }
+
+    .reviews-controls button {
+        padding: 8px 15px;
     }
 }
 
 @media (max-width: 480px) {
+    .reviews-slider {
+        max-width: 100%;
+    }
+
     .review-text {
-        font-size: 1rem; /* Noch kleinere Texte für mobile Geräte */
+        font-size: 0.9rem;
     }
 
     .review-detail {
-        font-size: 0.85rem; /* Anpassung für schmale Geräte */
+        font-size: 0.8rem;
     }
 
     .review-name {
-        font-size: 0.8rem; /* Kleinere Namen */
+        font-size: 0.8rem;
     }
 
-    .stars {
-        font-size: 1.2rem; /* Kleinere Sterne */
+    .reviews-controls button {
+        padding: 6px 10px;
     }
 }
 

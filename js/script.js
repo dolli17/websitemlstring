@@ -27,8 +27,8 @@ document.addEventListener('DOMContentLoaded', () => {
 document.addEventListener('DOMContentLoaded', () => {
     const reviews = [
         { name: "Kris N.", text: "Perfekt!", detail: "Fantastischer Service! Meine Schläger fühlen sich wie neu an. Absolut professionell und zuverlässig.", stars: 5 },
-        { name: "Verena N..", text: "Sehr zufrieden", detail: "Die Besaitung war einfach perfekt! Ich habe meinen Schläger so noch nie gefühlt. Vielen Dank für die tolle Arbeit.", stars: 5 },
-        { name: "Laura K..", text: "Klasse Arbeit", detail: "Das Team hat meinen Schläger genau nach meinen Wünschen bespannt. Ich habe endlich die Kontrolle, die ich gesucht habe.", stars: 5 },
+        { name: "Verena N.", text: "Sehr zufrieden", detail: "Die Besaitung war einfach perfekt! Ich habe meinen Schläger so noch nie gefühlt. Vielen Dank für die tolle Arbeit.", stars: 5 },
+        { name: "Laura K.", text: "Klasse Arbeit", detail: "Das Team hat meinen Schläger genau nach meinen Wünschen bespannt. Ich habe endlich die Kontrolle, die ich gesucht habe.", stars: 5 },
         { name: "Chris F.", text: "Top Qualität", detail: "Ich bin begeistert! Die Besaitung wurde schnell und mit hoher Präzision durchgeführt. Klare Empfehlung!", stars: 5 },
         { name: "Lena N.", text: "Einfach super!", detail: "Die Beratung war sehr freundlich und die Ergebnisse sprechen für sich. Mein Spiel hat sich sofort verbessert.", stars: 5 },
         { name: "Oliver R.", text: "Rundum zufrieden", detail: "Ein großartiger Service, der auf meine individuellen Wünsche eingegangen ist. Immer wieder gerne!", stars: 5 },
@@ -51,61 +51,55 @@ document.addEventListener('DOMContentLoaded', () => {
         { name: "Florian B.", text: "Einfach super", detail: "Alles lief reibungslos und das Ergebnis hat mich überzeugt. Mein Schläger ist perfekt!", stars: 4 }
     ];
 
-    const slider = document.querySelector('.review-slider');
-    const prevBtn = document.querySelector('.prev-btn');
-    const nextBtn = document.querySelector('.next-btn');
-    let currentIndex = 0;
+    let currentReviewIndex = 0;
 
-    // Funktion: Bewertungen dynamisch einfügen
-    function renderReviews() {
-        slider.innerHTML = reviews
-            .map(review => `
-                <div class="review-item">
-                    <p class="review-text"><strong>${review.text}</strong></p>
-                    <p class="review-detail">"${review.detail}"</p>
-                    <span class="review-name">- ${review.name}</span>
-                    <span class="stars">${"★".repeat(review.stars)}${"☆".repeat(5 - review.stars)}</span>
-                </div>
-            `)
-            .join('');
-        updateActiveReview();
+    const reviewContainer = document.querySelector('.reviews-slider');
+    const reviewName = document.querySelector('.review-name');
+    const reviewText = document.querySelector('.review-text');
+    const reviewDetail = document.querySelector('.review-detail');
+    const reviewStars = document.querySelector('.review-stars');
+
+    // Funktion, um eine zufällige Bewertung auszuwählen
+    function getRandomReview() {
+        let randomIndex;
+        do {
+            randomIndex = Math.floor(Math.random() * reviews.length);
+        } while (randomIndex === currentReviewIndex); // Gleiche Bewertung vermeiden
+        currentReviewIndex = randomIndex;
+        return reviews[randomIndex];
     }
 
-    // Funktion: Zeigt die aktive Bewertung
-    function updateActiveReview() {
-        const items = document.querySelectorAll('.review-item');
-        items.forEach((item, index) => {
-            item.classList.remove('active');
-            item.style.display = 'none';
-            if (index === currentIndex) {
-                item.classList.add('active');
-                item.style.display = 'block';
-            }
-        });
+    // Funktion, um eine Bewertung anzuzeigen
+    function displayReview() {
+        const review = getRandomReview();
+
+        // Bewertungselemente füllen
+        reviewName.textContent = review.name;
+        reviewText.textContent = review.text;
+        reviewDetail.textContent = review.detail;
+
+        // Sterne aktualisieren
+        reviewStars.innerHTML = '';
+        for (let i = 0; i < review.stars; i++) {
+            const star = document.createElement('span');
+            star.className = 'star';
+            star.textContent = '★';
+            reviewStars.appendChild(star);
+        }
     }
 
-    // Nächste Bewertung anzeigen
-    nextBtn.addEventListener('click', () => {
-        currentIndex = (currentIndex + 1) % reviews.length;
-        updateActiveReview();
-    });
+    // Automatischer Wechsel der Bewertungen alle 5 Sekunden
+    setInterval(displayReview, 5000);
 
-    // Vorherige Bewertung anzeigen
-    prevBtn.addEventListener('click', () => {
-        currentIndex = (currentIndex - 1 + reviews.length) % reviews.length;
-        updateActiveReview();
-    });
+    // Sofort eine Bewertung anzeigen
+    displayReview();
 
-    // Bewertungen automatisch anzeigen lassen
-    function autoSlide() {
-        setInterval(() => {
-            currentIndex = (currentIndex + 1) % reviews.length;
-            updateActiveReview();
-        }, 5000); // Alle 5 Sekunden
-    }
+    // Wischen/Wechseln per Buttons
+    const nextButton = document.querySelector('.next-review');
+    const prevButton = document.querySelector('.prev-review');
 
-    renderReviews();
-    autoSlide();
+    nextButton.addEventListener('click', displayReview);
+    prevButton.addEventListener('click', displayReview);
 });
 
 
