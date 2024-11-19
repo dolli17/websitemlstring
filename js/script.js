@@ -53,55 +53,40 @@ document.addEventListener('DOMContentLoaded', () => {
 
     let currentReviewIndex = 0;
 
-    const reviewContainer = document.querySelector('.reviews-slider');
-    const reviewName = document.querySelector('.review-name');
     const reviewText = document.querySelector('.review-text');
     const reviewDetail = document.querySelector('.review-detail');
+    const reviewName = document.querySelector('.review-name');
     const reviewStars = document.querySelector('.review-stars');
 
-    // Funktion, um eine zufällige Bewertung auszuwählen
     function getRandomReview() {
         let randomIndex;
         do {
             randomIndex = Math.floor(Math.random() * reviews.length);
-        } while (randomIndex === currentReviewIndex); // Gleiche Bewertung vermeiden
+        } while (randomIndex === currentReviewIndex);
         currentReviewIndex = randomIndex;
         return reviews[randomIndex];
     }
 
-    // Funktion, um eine Bewertung anzuzeigen
     function displayReview() {
         const review = getRandomReview();
-
-        // Bewertungselemente füllen
-        reviewName.textContent = review.name;
         reviewText.textContent = review.text;
-        reviewDetail.textContent = review.detail;
-
-        // Sterne aktualisieren
-        reviewStars.innerHTML = '';
-        for (let i = 0; i < review.stars; i++) {
-            const star = document.createElement('span');
-            star.className = 'star';
-            star.textContent = '★';
-            reviewStars.appendChild(star);
-        }
+        reviewDetail.textContent = `"${review.detail}"`;
+        reviewName.textContent = `- ${review.name}`;
+        reviewStars.innerHTML = '★'.repeat(review.stars) + '☆'.repeat(5 - review.stars);
     }
 
-    // Automatischer Wechsel der Bewertungen alle 5 Sekunden
-    setInterval(displayReview, 5000);
+    setInterval(displayReview, 5000); // Automatischer Wechsel alle 5 Sekunden
 
-    // Sofort eine Bewertung anzeigen
+    // Direkt beim Laden anzeigen
     displayReview();
 
-    // Wischen/Wechseln per Buttons
+    // Buttons für manuelles Wechseln
     const nextButton = document.querySelector('.next-review');
     const prevButton = document.querySelector('.prev-review');
 
     nextButton.addEventListener('click', displayReview);
     prevButton.addEventListener('click', displayReview);
 });
-
 
 document.addEventListener('DOMContentLoaded', () => {
     const text = "String it right.\nAce your game!"; // Text mit Zeilenumbruch

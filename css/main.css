@@ -381,9 +381,8 @@ a:hover {
     }
 }
 
-/* Bewertungen-Container */
 .reviews-section {
-    background-color: #edf3ec; /* Gleicher Hintergrund wie die FAQ */
+    background-color: white; /* Hintergrund der gesamten Sektion in Weiß */
     padding: 60px 20px;
     text-align: center;
 }
@@ -391,19 +390,14 @@ a:hover {
 .reviews-section h2 {
     font-size: 2.5rem;
     font-weight: bold;
-    color: #233d2e; /* Passend zum Design */
-    margin-bottom: 30px;
+    color: #233d2e;
+    margin-bottom: 40px;
 }
 
 .reviews-slider {
-    text-align: center;
-    margin: 50px auto;
     max-width: 800px;
+    margin: 0 auto;
     padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    background: white;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .review {
@@ -411,49 +405,48 @@ a:hover {
 }
 
 .review-text {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     font-weight: bold;
     color: #233d2e;
-    margin-bottom: 10px;
-}
-
-.review-stars {
-    color: #467a5a;
     margin-bottom: 10px;
 }
 
 .review-detail {
     font-size: 1rem;
     color: #555;
-    margin-bottom: 20px;
-    line-height: 1.6;
+    font-style: italic;
+    margin-bottom: 15px;
 }
 
 .review-name {
     font-size: 0.9rem;
-    color: #777;
-    font-style: italic;
+    color: #467a5a;
+    margin-bottom: 20px;
 }
 
-/* Buttons */
+.review-stars {
+    color: #ffc107; /* Goldene Sterne */
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+
 .reviews-controls {
     display: flex;
     justify-content: center;
-    gap: 10px;
+    gap: 20px;
 }
 
 .reviews-controls button {
-    background-color: #467a5a;
-    color: white;
-    padding: 10px 20px;
+    background: none;
     border: none;
-    border-radius: 5px;
+    font-size: 2rem;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    color: #467a5a;
+    transition: color 0.3s ease;
 }
 
 .reviews-controls button:hover {
-    background-color: #36554A;
+    color: #233d2e;
 }
 
 /* Responsive Design */
@@ -463,7 +456,7 @@ a:hover {
     }
 
     .review-text {
-        font-size: 1rem;
+        font-size: 1.2rem;
     }
 
     .review-detail {
@@ -471,41 +464,27 @@ a:hover {
     }
 
     .review-stars {
-        font-size: 0.9rem;
-    }
-
-    .review-name {
-        font-size: 0.85rem;
-    }
-
-    .reviews-controls button {
-        padding: 8px 15px;
+        font-size: 1.2rem;
     }
 }
 
 @media (max-width: 480px) {
-    .reviews-slider {
-        max-width: 100%;
-    }
-
     .review-text {
-        font-size: 0.9rem;
+        font-size: 1rem;
     }
 
     .review-detail {
         font-size: 0.8rem;
     }
 
-    .review-name {
-        font-size: 0.8rem;
+    .review-stars {
+        font-size: 1rem;
     }
 
     .reviews-controls button {
-        padding: 6px 10px;
+        font-size: 1.5rem;
     }
 }
-
-
 
 /* Kontakt Section */
 .contact {
