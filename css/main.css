@@ -392,6 +392,10 @@ a:hover {
     font-weight: bold;
     color: #233d2e;
     margin-bottom: 40px;
+    word-wrap: break-word; /* Sicherstellen, dass Wörter umgebrochen werden */
+    text-align: center; /* Zentrierte Überschrift */
+    max-width: 90%; /* Maximale Breite für kleinere Bildschirme */
+    margin: 0 auto 40px; /* Zentrierung durch auto-Margin */
 }
 
 .reviews-slider {
@@ -451,6 +455,11 @@ a:hover {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    .reviews-section h2 {
+        font-size: 2rem; /* Kleinere Schriftgröße für mittelgroße Bildschirme */
+        max-width: 95%; /* Noch mehr Platz auf kleinen Bildschirmen */
+    }
+
     .reviews-slider {
         max-width: 90%;
     }
@@ -469,6 +478,10 @@ a:hover {
 }
 
 @media (max-width: 480px) {
+    .reviews-section h2 {
+        font-size: 1.8rem; /* Noch kleinere Schriftgröße für sehr kleine Bildschirme */
+    }
+
     .review-text {
         font-size: 1rem;
     }
