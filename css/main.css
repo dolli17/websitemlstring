@@ -89,51 +89,132 @@ a:hover {
 /* Hero Section */
 .hero {
     position: relative;
-    height: 100vh; /* Die Sektion nimmt 100% der Höhe des Displays ein */
+    height: 100vh;
+    background: url("aleksandar-kyng-dhkdfFxGHfU-unsplash.jpg") no-repeat center center/cover;
     display: flex;
-    align-items: center; /* Vertikale Zentrierung */
-    justify-content: center; /* Horizontale Zentrierung */
-    overflow: hidden;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    background-color: #edf3ec; /* Heller Hintergrund */
+    color: white;
+    padding: 20px;
 }
 
-.slogan-wrapper {
-    transform: rotate(-5deg); /* Leichte Schrägstellung */
+.hero-content {
+    max-width: 800px;
 }
 
-.slogan {
-    font-size: 6rem;
-    font-weight: bold;
-    color: #233d2e; /* Dunkler Text passend zum hellen Hintergrund */
-    line-height: 1.2;
-    text-transform: uppercase; /* Großbuchstaben */
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Schatten für besseren Kontrast */
-}
-
-.slogan span {
-    display: block; /* Zeilenumbruch */
-}
-/* Hero Section Schreibmaschinen-Effekt */
-#typing-text {
-    display: inline-block;
-    white-space: pre-wrap; /* Zeilenumbrüche beachten */
-    overflow: hidden;
-    border-right: 2px solid #233d2e; /* Blinker-Effekt */
-}
-
-/* Blinker für die Schreibmaschine */
-.blinking-cursor {
-    display: inline-block;
+.hero-title {
     font-size: 3rem;
-    animation: blink 0.7s steps(2, start) infinite;
-    margin-left: 0; /* Keine zusätzlichen Abstände */
+    font-weight: bold;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.6);
+    margin-bottom: 20px;
 }
 
-/* Keyframes für die Blink-Animation */
-@keyframes blink {
+.hero-subtitle {
+    font-size: 1.5rem;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.btn-primary, .btn-secondary {
+    padding: 15px 30px;
+    font-size: 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn-primary {
+    background-color: #233d2e;
+    color: white;
+    font-weight: bold;
+}
+
+.btn-primary:hover {
+    background-color: #467a5a;
+    transform: scale(1.05);
+}
+
+.btn-secondary {
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    font-weight: bold;
+}
+
+.btn-secondary:hover {
+    background-color: white;
+    color: #233d2e;
+    transform: scale(1.05);
+}
+
+/* Scroll Indicator */
+.scroll-indicator {
+    position: absolute;
+    bottom: 20px;
+    text-align: center;
+    color: white;
+    animation: fadeIn 2s infinite;
+}
+
+.scroll-indicator span {
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.scroll-arrow {
+    width: 15px;
+    height: 15px;
+    border: 2px solid white;
+    border-left: none;
+    border-top: none;
+    transform: rotate(45deg);
+    margin: 0 auto;
+    animation: bounce 1.5s infinite;
+}
+
+@keyframes fadeIn {
+    0%, 100% {
+        opacity: 1;
+    }
     50% {
-        opacity: 0;
+        opacity: 0.5;
+    }
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: rotate(45deg) translateY(0);
+    }
+    50% {
+        transform: rotate(45deg) translateY(10px);
+    }
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 2.5rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1.2rem;
+    }
+
+    .btn-primary, .btn-secondary {
+        padding: 10px 20px;
+        font-size: 0.9rem;
     }
 }
 
@@ -242,6 +323,54 @@ a:hover {
     position: relative;
     line-height: 1.6;
 }
+/* Preisliste */
+.price-list {
+    margin-top: 40px;
+    background-color: #edf3ec; /* Heller Hintergrund für Kontrast */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sanfter Schatten */
+}
+
+.price-list h3 {
+    font-size: 1.8rem;
+    color: #233d2e;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.pricing-table {
+    width: 100%;
+    border-collapse: collapse; /* Keine Lücken zwischen den Zellen */
+}
+
+.pricing-table thead th {
+    background-color: #36554A;
+    color: white;
+    font-size: 1.2rem;
+    padding: 10px;
+    text-align: left;
+}
+
+.pricing-table tbody td {
+    padding: 10px;
+    font-size: 1rem;
+    color: #233d2e;
+    border-bottom: 1px solid #ddd;
+}
+
+.pricing-table tbody tr:hover {
+    background-color: #f9f9f9; /* Hover-Effekt für bessere UX */
+}
+
+.pricing-table tbody tr:last-child td {
+    border-bottom: none; /* Kein Border bei der letzten Zeile */
+}
+
+.pricing-table td:first-child {
+    font-weight: bold;
+}
+
 
 /* Punkte vor jedem Listeneintrag */
 .services li::before {
@@ -617,4 +746,33 @@ a:hover {
         line-height: 1.1;
     }
 }
+@media (max-width: 768px) {
+    .pricing-table thead {
+        display: none; /* Kopfzeile ausblenden */
+    }
+
+    .pricing-table tr {
+        display: block;
+        margin-bottom: 20px;
+    }
+
+    .pricing-table td {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 5px;
+        font-size: 0.9rem;
+        border: none; /* Kein Rahmen zwischen Zellen */
+        background: #edf3ec;
+        border-bottom: 1px solid #ccc;
+    }
+
+    .pricing-table td:first-child {
+        font-weight: bold;
+    }
+
+    .pricing-table tr:last-child td {
+        border-bottom: none;
+    }
+}
+
 
