@@ -112,3 +112,5 @@ document.addEventListener('DOMContentLoaded', () => {
     typeWriter(); // Schreibanimation starten
 });
 
+
+
