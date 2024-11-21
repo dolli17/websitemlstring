@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const reviews = [
         { name: "Kris N.", text: "Perfekt!", detail: "Fantastischer Service! Meine Schläger fühlen sich wie neu an. Absolut professionell und zuverlässig.", stars: 5 },
         { name: "Verena N.", text: "Sehr zufrieden", detail: "Die Besaitung war einfach perfekt! Ich habe meinen Schläger so noch nie gefühlt. Vielen Dank für die tolle Arbeit.", stars: 5 },
-        { name: "Laura K.", text: "Klasse Arbeit", detail: "Das Team hat meinen Schläger genau nach meinen Wünschen bespannt. Ich habe endlich die Kontrolle, die ich gesucht habe.", stars: 5 },
+        { name: "Lauritz M.", text: "Klasse Arbeit", detail: "Das Team hat meinen Schläger genau nach meinen Wünschen bespannt. Ich habe endlich die Kontrolle, die ich gesucht habe.", stars: 5 },
         { name: "Chris F.", text: "Top Qualität", detail: "Ich bin begeistert! Die Besaitung wurde schnell und mit hoher Präzision durchgeführt. Klare Empfehlung!", stars: 5 },
         { name: "Lena N.", text: "Einfach super!", detail: "Die Beratung war sehr freundlich und die Ergebnisse sprechen für sich. Mein Spiel hat sich sofort verbessert.", stars: 5 },
         { name: "Oliver R.", text: "Rundum zufrieden", detail: "Ein großartiger Service, der auf meine individuellen Wünsche eingegangen ist. Immer wieder gerne!", stars: 5 },
@@ -48,7 +48,8 @@ document.addEventListener('DOMContentLoaded', () => {
         { name: "Isa J.", text: "Tolle Qualität", detail: "Mein Schläger ist perfekt bespannt und fühlt sich großartig an. Ich komme gerne wieder.", stars: 4 },
         { name: "Phillip J.", text: "Guter Service", detail: "Ich bin zufrieden mit der Besaitung und der Beratung. Es war definitiv die richtige Wahl.", stars: 4 },
         { name: "Nils B.", text: "Sehr professionell", detail: "Ich bin begeistert von der Qualität und dem freundlichen Service. Vielen Dank!", stars: 4 },
-        { name: "Florian B.", text: "Einfach super", detail: "Alles lief reibungslos und das Ergebnis hat mich überzeugt. Mein Schläger ist perfekt!", stars: 4 }
+        { name: "Florian B.", text: "Einfach super", detail: "Alles lief reibungslos und das Ergebnis hat mich überzeugt. Mein Schläger ist perfekt!", stars: 4 },
+        { name: "Adrian P", text: "Unschlagbar im Spiel dank unschlagbarem Angebot", detail: "Durch meine neue ML-Stringservice Besaitung konnte ich nie zuvor erreichte Leistungen erzielen. Ich bin mehr als glücklich meinen Tennisschläger bei ML Stringservice besaitet zu haben. ", stars: 5 }
     ];
 
     let currentReviewIndex = 0;

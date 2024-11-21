@@ -22,10 +22,10 @@ a:hover {
 
 /* Header / Navigation */
 header {
-    flex-shrink: 0;
     padding: 10px 20px;
     background-color: #edf3ec;
     border-bottom: 1px solid #ccc;
+    z-index: 10;
 }
 
 .navbar {
@@ -43,6 +43,7 @@ header {
     display: flex;
     list-style: none;
     gap: 20px;
+    margin: 0;
 }
 
 .nav-menu li {
@@ -57,6 +58,14 @@ header {
 
 .nav-menu a:hover {
     color: #467a5a;
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    cursor: pointer;
 }
 
 /* Hero-Section */
@@ -102,5 +111,47 @@ main {
 .image-container img.active {
     opacity: 1;
 }
+/* Responsiveness */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block; /* Toggle für Tablets und Smartphones */
+    }
 
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+        background: #edf3ec;
+        padding: 10px;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
 
+    .nav-menu.show {
+        display: flex; /* Menü sichtbar bei Aktivierung */
+    }
+
+    .image-container {
+        width: 90%; /* Breiter auf Tablets */
+        height: 60%; /* Niedriger auf Tablets */
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        font-size: 1.2rem;
+    }
+
+    .image-container {
+        width: 100%; /* Volle Breite auf Smartphones */
+        height: 50%; /* Kleinere Höhe auf Smartphones */
+    }
+
+    .nav-menu a {
+        font-size: 0.8rem;
+    }
+}
