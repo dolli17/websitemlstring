@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', () => {
         { name: "Louis C.", text: "Beeindruckend", detail: "Die Qualität ist wirklich hervorragend. Ich werde auf jeden Fall wiederkommen.", stars: 4 },
         { name: "Elias M.", text: "Sehr gut", detail: "Freundlicher Service und eine perfekte Besaitung. Ich bin sehr zufrieden mit dem Ergebnis.", stars: 4 },
         { name: "Patrick S.", text: "Zuverlässig", detail: "Alles wurde genau nach meinen Wünschen umgesetzt. Vielen Dank für die tolle Arbeit!", stars: 4 },
-        { name: "Ilona J.", text: "Empfehlenswert", detail: "Der Service hat mich wirklich überzeugt. Mein Schläger fühlt sich jetzt großartig an.", stars: 4 },
+        { name: "Jules F.", text: "Empfehlenswert", detail: "Der Service hat mich wirklich überzeugt. Mein Schläger fühlt sich jetzt großartig an.", stars: 4 },
         { name: "Isa J.", text: "Tolle Qualität", detail: "Mein Schläger ist perfekt bespannt und fühlt sich großartig an. Ich komme gerne wieder.", stars: 4 },
         { name: "Phillip J.", text: "Guter Service", detail: "Ich bin zufrieden mit der Besaitung und der Beratung. Es war definitiv die richtige Wahl.", stars: 4 },
         { name: "Nils B.", text: "Sehr professionell", detail: "Ich bin begeistert von der Qualität und dem freundlichen Service. Vielen Dank!", stars: 4 },
