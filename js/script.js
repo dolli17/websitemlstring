@@ -53,7 +53,7 @@ document.addEventListener('DOMContentLoaded', () => {
     ];
 
     let currentReviewIndex = 0;
-
+    let reviewHistory = [];
     const reviewText = document.querySelector('.review-text');
     const reviewDetail = document.querySelector('.review-detail');
     const reviewName = document.querySelector('.review-name');
@@ -64,29 +64,43 @@ document.addEventListener('DOMContentLoaded', () => {
         do {
             randomIndex = Math.floor(Math.random() * reviews.length);
         } while (randomIndex === currentReviewIndex);
-        currentReviewIndex = randomIndex;
         return reviews[randomIndex];
     }
 
-    function displayReview() {
-        const review = getRandomReview();
+    function displayReview(review) {
         reviewText.textContent = review.text;
         reviewDetail.textContent = `"${review.detail}"`;
         reviewName.textContent = `- ${review.name}`;
         reviewStars.innerHTML = '★'.repeat(review.stars) + '☆'.repeat(5 - review.stars);
     }
 
-    setInterval(displayReview, 5000); // Automatischer Wechsel alle 5 Sekunden
+    function showNextReview() {
+        const randomReview = getRandomReview();
+        reviewHistory.push(randomReview);
+        currentReviewIndex = reviewHistory.length - 1;
+        displayReview(randomReview);
+    }
 
-    // Direkt beim Laden anzeigen
-    displayReview();
+    function showPreviousReview() {
+        if (currentReviewIndex > 0) {
+            currentReviewIndex -= 1;
+            displayReview(reviewHistory[currentReviewIndex]);
+        }
+    }
 
-    // Buttons für manuelles Wechseln
+    setInterval(() => {
+        showNextReview();
+    }, 5000);
+
+    // Directly display the first review
+    showNextReview();
+
+    // Buttons for manual navigation
     const nextButton = document.querySelector('.next-review');
     const prevButton = document.querySelector('.prev-review');
 
-    nextButton.addEventListener('click', displayReview);
-    prevButton.addEventListener('click', displayReview);
+    nextButton.addEventListener('click', showNextReview);
+    prevButton.addEventListener('click', showPreviousReview);
 });
 
 document.addEventListener('DOMContentLoaded', () => {
