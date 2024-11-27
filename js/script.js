@@ -113,5 +113,11 @@ document.addEventListener('DOMContentLoaded', () => {
     typeWriter(); // Schreibanimation starten
 });
 
+function toggleInfo() {
+    const infoText = document.getElementById("info-text");
+    infoText.style.display = infoText.style.display === "block" ? "none" : "block";
+}
+
+
 
 

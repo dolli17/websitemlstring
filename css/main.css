@@ -822,3 +822,29 @@ a:hover {
     }
 }
 
+/* Hinweis-Text für MLStringService Sticker */
+.info-text {
+    display: none;
+    margin-top: 10px;
+    font-size: 0.9rem;
+    color: #233d2e;
+    background-color: #f4f4f4;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.toggle-info {
+    background: none;
+    border: none;
+    color: #36554A;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-left: 5px;
+}
+
+.toggle-info:hover {
+    text-decoration: underline;
+}
+
+
