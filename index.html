@@ -1,305 +1,497 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ML StringService</title>
-    <link rel="stylesheet" href="css/main.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ML StringService — Perfekte Besaitung für Dein Spiel</title>
+  <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;1,9..144,300;1,9..144,400&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-<header class="main-header">
-    <nav class="navbar">
-        <div class="logo">ML StringService</div>
-        <button class="menu-toggle" aria-label="Menü öffnen/schließen">
-            &#9776; <!-- Hamburger-Menü-Icon -->
-        </button>
-        <ul class="nav-left">
-            <li><a href="#about-us">Über Uns</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#faq">FAQ</a></li>
-            <li><a href="#contact">Kontakt</a></li>
-        </ul>
+
+<header class="site-header">
+  <div class="wrap site-header__bar">
+    <a href="index.html" class="brand">
+      <span class="brand__mark">M·L</span>
+      <span class="brand__name">ML StringService</span>
+      <span class="brand__sub">est. 2022</span>
+    </a>
+    <nav class="nav" id="nav">
+      <a href="#about-us">Über uns</a>
+      <a href="#services">Leistungen</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contact">Kontakt</a>
     </nav>
+    <a href="#contact" class="header__cta">
+      Schläger bringen
+      <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 6h10M7 2l4 4-4 4"/></svg>
+    </a>
+    <button class="menu-toggle" aria-label="Menü"><span class="menu-toggle__bar"></span></button>
+  </div>
 </header>
+
 <main>
-    <section class="hero">
-        <div class="hero-content">
-            <h1 class="hero-title">Perfekte Besaitung für Dein Spiel</h1>
-            <p class="hero-subtitle">String it Right. Ace your Game!</p>
-            <div class="hero-buttons">
-                <a href="#services" class="btn-primary">Jetzt Besaiten</a>
-                <a href="#about-us" class="btn-secondary">Mehr erfahren</a>
-            </div>
-        </div>
-        <div class="scroll-indicator">
-            <span>Scroll</span>
-            <div class="scroll-arrow"></div>
-        </div>
-    </section>
 
-    <section id="about-us" class="about-us">
-        <div class="about-background"></div>
-        <div class="about-content">
-            <h2>Über uns</h2>
-            <div class="about-image-wrapper">
-                <img src="img/cristina-anne-costello-JfOh7yA6XuM-unsplash.jpg" alt="Tennisplatz" class="about-image">
-            </div>
-            <p>
-                Willkommen bei ML String Service – Ihrem zuverlässigen Partner für professionelles Besaiten von Tennisschlägern.
-                Was einst als Leidenschaftsprojekt von zwei Studenten im Großraum Stuttgart begann, hat sich zu einem erfolgreichen Unternehmen entwickelt.
-                Mittlerweile sind wir stolz darauf, auch in Konstanz und Heidelberg vertreten zu sein und sogar unseren ersten Mitarbeiter ins Team aufgenommen zu haben.
+  <!-- Hero -->
+  <section class="hero wrap">
+    <div class="hero__grid">
+      <div>
+        <span class="eyebrow">Ausgabe Nº04 · Stuttgart / Konstanz / Heidelberg</span>
+        <h1 class="hero__title">
+          Perfekte<br>
+          <em>Besaitung</em><span class="and">—für—</span><br>
+          Dein Spiel.
+        </h1>
+      </div>
+      <div class="hero__copy">
+        <p class="hero__slogan">String it right · Ace your game</p>
+        <p class="hero__lede">
+          Handwerkliches Besaiten von Tennisschlägern — abgestimmt auf Spielstil, Gefühl und Ziel. Seit 2022 aus einem Studentenprojekt gewachsen, heute an drei Standorten.
+        </p>
+        <div class="hero__ctas">
+          <a href="#services" class="btn btn--solid">
+            Jetzt besaiten
+            <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 6h10M7 2l4 4-4 4"/></svg>
+          </a>
+          <a href="#about-us" class="btn btn--ghost">Mehr erfahren</a>
+        </div>
+      </div>
+    </div>
 
-            </p>
-            <p>
-                Bei ML String Service geht es nicht nur um das Besaiten von Schlägern,
-                sondern darum, Ihr Spiel auf das nächste Level zu bringen.
-                Wir wissen, dass jeder Spieler individuell ist und die richtige Bespannung und Technik den entscheidenden Unterschied auf dem Platz ausmachen können.
-                Deshalb nehmen wir uns die Zeit, unsere Kunden umfassend zu beraten und unseren Service perfekt auf ihren Spielstil,
-                ihre Vorlieben und ihre Ziele abzustimmen. Egal, ob Sie ein ambitionierter Wettkampfspieler oder ein begeisterter Hobbyspieler sind –
-                wir bieten Ihnen die Expertise, die Sie brauchen, um Ihr Bestes zu geben.
-            </p>
-            <p>
-                Qualität steht bei uns an erster Stelle.
-                Jeder Schläger, den wir in die Hand nehmen, wird mit größter Sorgfalt und Präzision bearbeitet,
-                um beste Leistung und Langlebigkeit zu garantieren.
-                Dabei setzen wir auf hochwertige Materialien und moderne Techniken, um Ergebnisse zu liefern, die überzeugen.
-            </p>
-            <p>
-                Was uns besonders auszeichnet,
-                ist unser Anspruch, nicht nur perfekte Bespannungen zu liefern,
-                sondern auch persönliche Verbindungen aufzubauen – sowohl zu den Schlägern als auch zu unseren Kunden.
-                Wir glauben, dass exzellenter Service weit über die technischen Details hinausgeht. Er bedeutet, eine professionelle,
-                herzliche und individuelle Betreuung zu schaffen, die begeistert.
-            </p>
-            <p>
-                Als junges und dynamisches Team leben wir unsere Leidenschaft für Tennis und lassen uns von den Menschen inspirieren,
-                die wir durch unsere Arbeit kennenlernen. Egal, ob Sie uns in Stuttgart,
-                Konstanz oder Heidelberg besuchen – Sie werden überall dieselbe Begeisterung, Fachkompetenz und Liebe zum Detail erleben,
-                die ML String Service von Anfang an geprägt haben.
-            </p>
-            <p>
-                Vielen Dank, dass Sie uns Ihr Spiel anvertrauen. Wir freuen uns darauf, Ihnen zu helfen, Ihr Potenzial voll auszuschöpfen! 🎾
-            </p>
-        </div>
-    </section>
-    <!-- Harte Hintergrundänderung -->
-    <section id="services" class="services">
-        <div class="services-content">
-            <h2>Unsere Leistungen</h2>
-            <p>
-                Bei <strong>ML String Service</strong> stehen Sie und Ihr Spiel im Mittelpunkt. Wir bieten nicht nur professionelles Besaiten von Tennisschlägern,
-                sondern auch individuelle Beratung und Expertise, die Ihre Leistung auf dem Platz spürbar verbessert.
-                Unser Ziel ist es, Ihren Schläger perfekt auf Ihre Bedürfnisse abzustimmen – für mehr Präzision, Power und Kontrolle bei jedem Schlag.
-            </p>
-            <h3>Was wir für Sie tun:</h3>
-            <ul>
-                <li>
-                    <strong>Professionelles Besaiten:</strong> Mit modernster Technik und größter Sorgfalt bringen wir Ihre Bespannung auf das nächste Level.
-                    Perfekte Spannung, beste Materialien und eine Verarbeitung, die höchsten Ansprüchen genügt.
-                </li>
-                <li>
-                    <strong>Individuelle Beratung:</strong> Ob Sie Anfänger, Fortgeschrittener oder Profi sind – wir beraten Sie bei der Auswahl der richtigen Saiten,
-                    Spannungen und Materialien, die am besten zu Ihrem Spielstil passen.
-                </li>
-                <li>
-                    <strong>Workshops und Schulungen:</strong> Lernen Sie von uns die Kunst des Besaitens.
-                    In unseren Workshops geben wir unser Know-how weiter und zeigen, wie Sie Schläger selbst besaiten können
-                    – praxisnah und leicht verständlich.
-                </li>
-            </ul>
+    <div class="hero__image">
+      <div class="hero__image-meta">
+        <div><strong>03</strong><span>Standorte</span></div>
+        <div><strong>24h</strong><span>Express-Option</span></div>
+        <div><strong>2022</strong><span>Gegründet</span></div>
+        <div><strong>ab 12&thinsp;€</strong><span>pro Bespannung</span></div>
+      </div>
+      <figure class="hero__frame">
+        <img src="img/hero-clay.jpg" alt="Sandplatz von oben mit Linienmarkierungen">
+        <figcaption class="hero__frame-caption">Sandplatz · Draufsicht · Linienmarkierung</figcaption>
+      </figure>
+    </div>
+  </section>
 
-            <!-- Preisliste -->
-            <div class="price-list">
-                <h3>Unsere Preisliste</h3>
-                <table class="pricing-table">
-                    <thead>
-                    <tr>
-                        <th>Leistung</th>
-                        <th>Preis</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr>
-                        <td>Besaitung (inkl. Premium-Saite)</td>
-                        <td>20 €</td>
-                    </tr>
-                    <tr>
-                        <td>Besaitung (mit eigener Saite)</td>
-                        <td>12 €</td>
-                    </tr>
-                    <tr>
-                        <td>Individuelle Beratung</td>
-                        <td>kostenlos</td>
-                    </tr>
-                    <tr>
-                        <td>Express-Besaitung (innerhalb 3 Stunden)</td>
-                        <td>+10 €</td>
-                    </tr>
-                    <tr>
-                        <td>Workshop: Die Kunst der Besaitung</td>
-                        <td>50 €</td>
-                    </tr>
-                    <tr>
-                        <td>
-                            MLStringService Sticker
-                            <button class="toggle-info" onclick="toggleInfo()">ℹ️</button>
-                            <div id="info-text" class="info-text">
-                                MLStringService weist ausdrücklich darauf hin, dass das Anbringen von Stickern auf fremdem Eigentum ohne ausdrückliche Zustimmung des Eigentümers gesetzlich verboten ist und strafrechtliche sowie zivilrechtliche Konsequenzen nach sich ziehen kann.
+  <!-- Ticker -->
+  <div class="ticker">
+    <div class="ticker__track">
+      <span class="ticker__item">Monofilament</span>
+      <span class="ticker__item">Multifilament</span>
+      <span class="ticker__item">Naturdarm</span>
+      <span class="ticker__item">Hybrid-Bespannung</span>
+      <span class="ticker__item">Express innerhalb 3h</span>
+      <span class="ticker__item">Individuelle Beratung</span>
+      <span class="ticker__item">Workshops</span>
+      <span class="ticker__item">Monofilament</span>
+      <span class="ticker__item">Multifilament</span>
+      <span class="ticker__item">Naturdarm</span>
+      <span class="ticker__item">Hybrid-Bespannung</span>
+      <span class="ticker__item">Express innerhalb 3h</span>
+      <span class="ticker__item">Individuelle Beratung</span>
+      <span class="ticker__item">Workshops</span>
+    </div>
+  </div>
 
-                                MLStringService übernimmt keine Haftung für Schäden, rechtliche Konsequenzen oder sonstige Ansprüche, die durch unsachgemäße Verwendung der Sticker, insbesondere durch das Anbringen auf fremdem Eigentum, entstehen.
+  <!-- Über Uns -->
+  <section id="about-us" class="section">
+    <div class="wrap">
+      <header class="section-head">
+        <div class="section-head__num">Nº01 / Über uns</div>
+        <h2 class="section-head__title">Ein Handwerk, zwei Gründer, <em>drei Standorte.</em></h2>
+      </header>
 
-                                Mit dem Erwerb und der Nutzung der Sticker bestätigen Sie, die alleinige Verantwortung für deren ordnungsgemäßen Gebrauch zu übernehmen und die geltenden gesetzlichen Bestimmungen einzuhalten.
-                            </div>
-                        </td>
-                        <td>5 € pro 100 Stück</td>
-                    </tr>
-                    </tbody>
-                </table>
-            </div>
+      <div class="about">
+        <div>
+          <p class="about__lead">
+            Was als Leidenschaftsprojekt zweier Studenten im Großraum Stuttgart begann, ist heute ein Team in drei Städten — mit demselben Anspruch an Qualität, Beratung und Liebe zum Detail.
+          </p>
+          <div class="about__sig">
+            <div><strong>Stuttgart</strong>Hauptsitz</div>
+            <div><strong>Konstanz</strong>Seit 2023</div>
+            <div><strong>Heidelberg</strong>Seit 2024</div>
+          </div>
         </div>
-    </section>
+        <div class="about__body">
+          <p>
+            Willkommen bei <strong>ML String Service</strong> — Ihrem zuverlässigen Partner für professionelles Besaiten von Tennisschlägern. Was einst als Leidenschaftsprojekt von zwei Studenten im Großraum Stuttgart begann, hat sich zu einem erfolgreichen Unternehmen entwickelt. Mittlerweile sind wir stolz darauf, auch in Konstanz und Heidelberg vertreten zu sein und sogar unseren ersten Mitarbeiter ins Team aufgenommen zu haben.
+          </p>
+          <p>
+            Bei uns geht es nicht nur um das Besaiten von Schlägern, sondern darum, Ihr Spiel auf das nächste Level zu bringen. Jeder Spieler ist individuell — die richtige Bespannung und Technik machen den entscheidenden Unterschied auf dem Platz. Deshalb nehmen wir uns Zeit, unsere Kunden umfassend zu beraten und unseren Service perfekt auf Spielstil, Vorlieben und Ziele abzustimmen.
+          </p>
+          <p>
+            Qualität steht an erster Stelle. Jeder Schläger wird mit größter Sorgfalt und Präzision bearbeitet. Wir setzen auf hochwertige Materialien und moderne Techniken — für Ergebnisse, die überzeugen und halten.
+          </p>
+          <p>
+            Als junges, dynamisches Team leben wir unsere Leidenschaft für Tennis und lassen uns von den Menschen inspirieren, die wir durch unsere Arbeit kennenlernen. Egal ob Stuttgart, Konstanz oder Heidelberg — überall dieselbe Begeisterung, Fachkompetenz und Liebe zum Detail. Vielen Dank, dass Sie uns Ihr Spiel anvertrauen. 🎾
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
 
+  <!-- Services -->
+  <section id="services" class="section section--ink">
+    <div class="wrap">
+      <header class="section-head">
+        <div class="section-head__num">Nº02 / Leistungen</div>
+        <h2 class="section-head__title">Handwerk, Beratung, <em>Präzision</em> — alles aus einer Hand.</h2>
+      </header>
+    </div>
 
-    <section id="faq" class="faq">
-        <h2>Häufig gestellte Fragen</h2>
+    <div class="services-grid">
+      <article class="service">
+        <div class="service__num">01 — Bespannung</div>
+        <h3 class="service__title">Professionelles Besaiten.</h3>
+        <p class="service__desc">
+          Mit modernster Elektronik-Maschine und konstanter Zugkraft. Perfekte Spannung, beste Materialien und eine Verarbeitung, die höchsten Ansprüchen genügt.
+        </p>
+        <div class="service__foot">
+          <span>Dauer · 6–48h</span>
+          <span class="service__price">ab 12 €</span>
+        </div>
+      </article>
+      <article class="service">
+        <div class="service__num">02 — Beratung</div>
+        <h3 class="service__title">Individuelle Beratung.</h3>
+        <p class="service__desc">
+          Ob Anfänger, Fortgeschrittener oder Profi — wir finden die richtigen Saiten, Spannungen und Materialien, die zu Ihrem Spielstil passen.
+        </p>
+        <div class="service__foot">
+          <span>Vor Ort / Remote</span>
+          <span class="service__price">kostenlos</span>
+        </div>
+      </article>
+      <article class="service">
+        <div class="service__num">03 — Workshop</div>
+        <h3 class="service__title">Die Kunst der Besaitung.</h3>
+        <p class="service__desc">
+          Lernen Sie das Handwerk in einem praxisnahen Workshop. Wir geben unser Know-how weiter — Schritt für Schritt, leicht verständlich.
+        </p>
+        <div class="service__foot">
+          <span>3h · Kleingruppe</span>
+          <span class="service__price">50 €</span>
+        </div>
+      </article>
+    </div>
 
-        <!-- Vorhandene Fragen -->
-        <div class="faq-item">
-            <button class="faq-question">
-                Wie lange dauert das Besaiten eines Schlägers?
-                <span class="faq-toggle">+</span>
-            </button>
-            <div class="faq-answer">
-                Das Besaiten eines Schlägers dauert in der Regel 6 bis 48 Stunden, je nach Auftragslage. Bei dringenden Anfragen bieten wir auch einen Express-Service an.
-            </div>
-        </div>
-        <div class="faq-item">
-            <button class="faq-question">
-                Welche Saitenarten bieten Sie an?
-                <span class="faq-toggle">+</span>
-            </button>
-            <div class="faq-answer">
-                Wir bieten eine große Auswahl an Saiten, darunter Monofilament, Multifilament und Naturdarmsaiten. Wir beraten Sie gerne, welche Saite am besten zu Ihrem Spielstil passt.
-            </div>
-        </div>
-        <div class="faq-item">
-            <button class="faq-question">
-                Kann ich meinen Schläger vor Ort abgeben?
-                <span class="faq-toggle">+</span>
-            </button>
-            <div class="faq-answer">
-                Ja, Sie können Ihren Schläger an unseren Standorten in Stuttgart, Konstanz oder Heidelberg abgeben. Wir stehen Ihnen dort auch für eine persönliche Beratung zur Verfügung.
-            </div>
-        </div>
-        <div class="faq-item">
-            <button class="faq-question">
-                Wie wähle ich die richtige Bespannungsspannung?
-                <span class="faq-toggle">+</span>
-            </button>
-            <div class="faq-answer">
-                Die richtige Spannung hängt von Ihrem Spielstil ab. Höhere Spannungen bieten mehr Kontrolle, während niedrigere Spannungen mehr Power generieren. Unsere Experten beraten Sie gerne.
-            </div>
-        </div>
-        <div class="faq-item">
-            <button class="faq-question">
-                Wie oft sollte ich meinen Schläger besaiten lassen?
-                <span class="faq-toggle">+</span>
-            </button>
-            <div class="faq-answer">
-                Eine Faustregel ist: So oft im Jahr, wie Sie pro Woche spielen. Vielspieler und Turnierspieler sollten häufiger besaiten, um optimale Leistung zu gewährleisten.
-            </div>
-        </div>
-        <div class="faq-item">
-            <button class="faq-question">
-                Kann ich meine eigene Saite mitbringen?
-                <span class="faq-toggle">+</span>
-            </button>
-            <div class="faq-answer">
-                Ja, Sie können Ihre eigene Saite mitbringen. Wir bespannen Ihren Schläger gerne damit. Bitte beachten Sie jedoch, dass die Qualität der Besaitung auch von der Saite selbst abhängt.
-            </div>
-        </div>
-        <div class="faq-item">
-            <button class="faq-question">
-                Bieten Sie einen Express-Besaitungsservice an?
-                <span class="faq-toggle">+</span>
-            </button>
-            <div class="faq-answer">
-                Ja, wir bieten einen Express-Service an. Ihr Schläger wird innerhalb weniger Stunden bespannt. Bitte kontaktieren Sie uns im Voraus, um sicherzustellen, dass der Service verfügbar ist.
-            </div>
-        </div>
-        <div class="faq-item">
-            <button class="faq-question">
-                Welche Zahlungsmethoden akzeptieren Sie?
-                <span class="faq-toggle">+</span>
-            </button>
-            <div class="faq-answer">
-                Wir akzeptieren Barzahlung, EC-Karten, Kreditkarten und auch PayPal. Bitte fragen Sie an Ihrem Standort nach den verfügbaren Zahlungsmethoden.
-            </div>
-        </div>
-        <div class="faq-item">
-            <button class="faq-question">
-                Kann ich mehrere Schläger gleichzeitig besaiten lassen?
-                <span class="faq-toggle">+</span>
-            </button>
-            <div class="faq-answer">
-                Ja, Sie können mehrere Schläger gleichzeitig besaiten lassen. Bei größeren Aufträgen wie z. B. für Mannschaften bieten wir auch Rabatte an.
-            </div>
-        </div>
-        <div class="faq-item">
-            <button class="faq-question">
-                Was passiert, wenn meine Saite während eines Matches reißt?
-                <span class="faq-toggle">+</span>
-            </button>
-            <div class="faq-answer">
-                Wir empfehlen, immer einen Ersatzschläger mit einer frischen Besaitung dabei zu haben. Alternativ können Sie unseren Express-Service nutzen, um schnell eine neue Besaitung zu erhalten.
-            </div>
-        </div>
-    </section>
-    <section class="reviews-section">
-        <h2>Kundenbewertungen</h2>
-        <div class="reviews-slider">
-            <div class="review">
-                <div class="review-text"></div> <!-- Kurzer Text -->
-                <div class="review-detail"></div> <!-- Langer Detailtext -->
-                <div class="review-name"></div> <!-- Name des Kunden -->
-                <div class="review-stars"></div> <!-- Sternebewertung -->
-            </div>
-            <div class="reviews-controls">
-                <button class="prev-review" aria-label="Vorherige Bewertung">❮</button>
-                <button class="next-review" aria-label="Nächste Bewertung">❯</button>
-            </div>
-        </div>
-    </section>
-    <section id="contact" class="contact">
-        <div class="contact-content">
-            <h2>Kontakt</h2>
-            <p>Wir freuen uns darauf, von Ihnen zu hören! Folgen Sie uns auf Instagram oder schreiben Sie uns direkt eine E-Mail.</p>
-            <div class="contact-icons">
-                <!-- Instagram Icon -->
-                <a href="https://www.instagram.com/mlstringservice" target="_blank" class="contact-icon" aria-label="Instagram">
-                    <img src="img/fa2e3ecfb5cfcdc9a679974c6a06c45b-removebg-preview.png" alt="Instagram Icon">
-                </a>
-                <!-- Email Icon -->
-                <a href="mailto:mlstringservice@gmail.com" class="contact-icon" aria-label="E-Mail">
-                    <img src="img/png-clipart-email-logo-icon-email-black-envelope-logo-miscellaneous-text-thumbnail-removebg-preview.png" alt="E-Mail Icon">
-                </a>
-            </div>
-        </div>
-    </section>
-        <footer class="footer-bottom">
-            <div class="footer-bottom-wrapper">
-                <p>2024 ML String Service. Alle Rechte vorbehalten.</p>
-                <ul>
-                    <li><a href="html/privacy-policy.html">Datenschutz</a></li>
-                    <li><a href="html/privacy-policy.html">AGB</a></li>
-                    <li><a href="html/privacy-policy.html">Impressum</a></li>
-                </ul>
-            </div>
-        </footer>
+    <div class="wrap" style="margin-top: clamp(56px, 7vw, 96px);">
+      <header class="section-head">
+        <div class="section-head__num">Nº02.1 / Preisliste</div>
+        <h2 class="section-head__title">Transparente <em>Tarife.</em></h2>
+      </header>
 
+      <div class="prices">
+        <div class="price">
+          <span class="price__num">01</span>
+          <span class="price__label">Besaitung inkl. Premium-Saite
+            <span class="price__sub">Auswahl aus unserem Saitenlager — Monofilament oder Multifilament</span>
+          </span>
+          <span class="price__value">20&thinsp;€</span>
+        </div>
+        <div class="price">
+          <span class="price__num">02</span>
+          <span class="price__label">Besaitung mit eigener Saite
+            <span class="price__sub">Sie bringen die Saite mit — wir übernehmen den Rest.</span>
+          </span>
+          <span class="price__value">12&thinsp;€</span>
+        </div>
+        <div class="price">
+          <span class="price__num">03</span>
+          <span class="price__label">Individuelle Beratung
+            <span class="price__sub">Saitenwahl, Spannung und Setup für Ihren Spielstil.</span>
+          </span>
+          <span class="price__value"><em>kostenlos</em></span>
+        </div>
+        <div class="price">
+          <span class="price__num">04</span>
+          <span class="price__label">Express-Besaitung
+            <span class="price__sub">Fertig in 3 Stunden. Vorher anrufen, wir halten den Slot frei.</span>
+          </span>
+          <span class="price__value">+10&thinsp;€</span>
+        </div>
+        <div class="price">
+          <span class="price__num">05</span>
+          <span class="price__label">Workshop: Die Kunst der Besaitung
+            <span class="price__sub">3 Stunden Praxis, Kleingruppe, eigenen Schläger mitbringen.</span>
+          </span>
+          <span class="price__value">50&thinsp;€</span>
+        </div>
+        <div class="price">
+          <span class="price__num">06</span>
+          <span class="price__label">ML-Sticker (100 Stk.)
+            <span class="price__sub">MLStringService weist ausdrücklich darauf hin, dass das Anbringen von Stickern auf fremdem Eigentum ohne ausdrückliche Zustimmung des Eigentümers gesetzlich verboten ist. Mit dem Erwerb bestätigen Sie, die alleinige Verantwortung für den ordnungsgemäßen Gebrauch zu übernehmen.</span>
+          </span>
+          <span class="price__value">5&thinsp;€</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="section">
+    <div class="wrap">
+      <header class="section-head">
+        <div class="section-head__num">Nº03 / FAQ</div>
+        <h2 class="section-head__title">Antworten auf die <em>häufigsten Fragen.</em></h2>
+      </header>
+
+      <div class="faq-list">
+        <details class="faq-item" open>
+          <summary class="faq-btn">
+            <span class="faq-btn__num">01</span>
+            <span class="faq-btn__text">Wie lange dauert das Besaiten eines Schlägers?</span>
+            <span class="faq-btn__icon" aria-hidden="true"></span>
+          </summary>
+          <div class="faq-body">
+            In der Regel 6 bis 48 Stunden, je nach Auftragslage. Bei dringenden Anfragen bieten wir einen Express-Service (fertig in 3 Stunden) an — bitte vorher telefonisch ankündigen.
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-btn">
+            <span class="faq-btn__num">02</span>
+            <span class="faq-btn__text">Welche Saitenarten bieten Sie an?</span>
+            <span class="faq-btn__icon" aria-hidden="true"></span>
+          </summary>
+          <div class="faq-body">
+            Wir führen Monofilament-, Multifilament- und Naturdarmsaiten sowie Hybrid-Bespannungen. In der Beratung finden wir gemeinsam heraus, welche Saite zu Ihrem Spielstil passt.
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-btn">
+            <span class="faq-btn__num">03</span>
+            <span class="faq-btn__text">Kann ich meinen Schläger vor Ort abgeben?</span>
+            <span class="faq-btn__icon" aria-hidden="true"></span>
+          </summary>
+          <div class="faq-body">
+            Ja. Abgabe ist in Stuttgart, Konstanz und Heidelberg möglich — dort stehen wir auch für eine persönliche Beratung zur Verfügung.
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-btn">
+            <span class="faq-btn__num">04</span>
+            <span class="faq-btn__text">Wie wähle ich die richtige Bespannungsspannung?</span>
+            <span class="faq-btn__icon" aria-hidden="true"></span>
+          </summary>
+          <div class="faq-body">
+            Die Spannung hängt von Ihrem Spielstil ab: höhere Spannungen bringen mehr Kontrolle, niedrigere mehr Power. Unsere Experten beraten Sie gern und legen Ihre ideale Range fest.
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-btn">
+            <span class="faq-btn__num">05</span>
+            <span class="faq-btn__text">Wie oft sollte ich meinen Schläger besaiten lassen?</span>
+            <span class="faq-btn__icon" aria-hidden="true"></span>
+          </summary>
+          <div class="faq-body">
+            Eine Faustregel: So oft im Jahr, wie Sie pro Woche spielen. Vielspieler und Turnierspieler sollten häufiger besaiten, um optimale Leistung zu gewährleisten.
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-btn">
+            <span class="faq-btn__num">06</span>
+            <span class="faq-btn__text">Kann ich meine eigene Saite mitbringen?</span>
+            <span class="faq-btn__icon" aria-hidden="true"></span>
+          </summary>
+          <div class="faq-body">
+            Ja, Sie können Ihre eigene Saite mitbringen. Wir bespannen Ihren Schläger gerne damit. Die Qualität der Besaitung hängt dabei auch von der Saite selbst ab.
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-btn">
+            <span class="faq-btn__num">07</span>
+            <span class="faq-btn__text">Bieten Sie einen Express-Besaitungsservice an?</span>
+            <span class="faq-btn__icon" aria-hidden="true"></span>
+          </summary>
+          <div class="faq-body">
+            Ja, wir bieten einen Express-Service an. Ihr Schläger wird innerhalb weniger Stunden bespannt. Bitte kontaktieren Sie uns im Voraus, um sicherzustellen, dass der Service verfügbar ist.
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-btn">
+            <span class="faq-btn__num">08</span>
+            <span class="faq-btn__text">Welche Zahlungsmethoden akzeptieren Sie?</span>
+            <span class="faq-btn__icon" aria-hidden="true"></span>
+          </summary>
+          <div class="faq-body">
+            Wir akzeptieren Barzahlung, EC-Karten, Kreditkarten und PayPal. Bitte fragen Sie an Ihrem Standort nach den verfügbaren Zahlungsmethoden.
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-btn">
+            <span class="faq-btn__num">09</span>
+            <span class="faq-btn__text">Kann ich mehrere Schläger gleichzeitig besaiten lassen?</span>
+            <span class="faq-btn__icon" aria-hidden="true"></span>
+          </summary>
+          <div class="faq-body">
+            Ja. Bei größeren Aufträgen — etwa für Mannschaften — bieten wir auch Rabatte an.
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-btn">
+            <span class="faq-btn__num">10</span>
+            <span class="faq-btn__text">Was passiert, wenn meine Saite während eines Matches reißt?</span>
+            <span class="faq-btn__icon" aria-hidden="true"></span>
+          </summary>
+          <div class="faq-body">
+            Wir empfehlen, immer einen Ersatzschläger mit frischer Besaitung dabei zu haben. Alternativ können Sie unseren Express-Service nutzen, um schnell eine neue Besaitung zu erhalten.
+          </div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reviews -->
+  <section class="section section--ink">
+    <div class="wrap">
+      <header class="section-head">
+        <div class="section-head__num">Nº04 / Stimmen</div>
+        <h2 class="section-head__title">Was unsere <em>Kunden</em> sagen.</h2>
+      </header>
+
+      <div class="reviews">
+        <div class="reviews__quote">
+          <div>
+            <div class="reviews__meta">
+              <span id="review-idx">01 / 24</span>
+              <span class="reviews__stars" id="review-stars">★ ★ ★ ★ ★</span>
+            </div>
+            <blockquote class="reviews__headline" id="review-headline">Unschlagbar im Spiel.</blockquote>
+            <p class="reviews__detail" id="review-detail">—</p>
+          </div>
+          <div class="reviews__ctrls">
+            <button class="reviews__btn" id="review-prev" aria-label="Vorherige">
+              <svg width="14" height="14" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M11 6H1M5 2L1 6l4 4"/></svg>
+            </button>
+            <span class="reviews__count" id="review-name">— Adrian P.</span>
+            <button class="reviews__btn" id="review-next" aria-label="Nächste">
+              <svg width="14" height="14" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 6h10M7 2l4 4-4 4"/></svg>
+            </button>
+          </div>
+        </div>
+        <aside class="reviews__aside">
+          <div class="reviews__stats">
+            <div class="reviews__stat"><strong>4.9</strong><span>Ø Sterne</span></div>
+            <div class="reviews__stat"><strong>24</strong><span>Bewertungen</span></div>
+            <div class="reviews__stat"><strong>100%</strong><span>Weiterempfehlung</span></div>
+            <div class="reviews__stat"><strong>3</strong><span>Standorte</span></div>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- Standorte -->
+  <section class="section section--paper2">
+    <div class="wrap">
+      <header class="section-head">
+        <div class="section-head__num">Nº05 / Standorte</div>
+        <h2 class="section-head__title">Drei Städte, <em>ein Handwerk.</em></h2>
+      </header>
+      <div class="locs">
+        <div class="loc">
+          <div class="eyebrow">Hauptsitz</div>
+          <h3 class="loc__name">Stuttgart</h3>
+          <div class="loc__meta">48.78° N · 9.18° E</div>
+          <p class="muted" style="font-size:14px;margin:0;">Ursprung des Unternehmens. Hier entstand 2022 unsere erste Werkstatt.</p>
+        </div>
+        <div class="loc">
+          <div class="eyebrow">Filiale</div>
+          <h3 class="loc__name">Konstanz</h3>
+          <div class="loc__meta">47.66° N · 9.18° E</div>
+          <p class="muted" style="font-size:14px;margin:0;">Am Bodensee. Werkstatt <span>auf Termin</span>, ideal für Saison-Setups.</p>
+        </div>
+        <div class="loc">
+          <div class="eyebrow">Filiale</div>
+          <h3 class="loc__name">Heidelberg</h3>
+          <div class="loc__meta">49.40° N · 8.67° E</div>
+          <p class="muted" style="font-size:14px;margin:0;">Jüngster Standort. Studentenstadt, hohe Auslastung in der Sommersaison.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Kontakt -->
+  <section id="contact" class="section">
+    <div class="wrap">
+      <header class="section-head">
+        <div class="section-head__num">Nº06 / Kontakt</div>
+        <h2 class="section-head__title">Schläger bringen. <em>Spiel heben.</em></h2>
+      </header>
+
+      <div class="contact">
+        <div>
+          <h3 class="contact__title">String it <em>Right.</em><br>Ace your <em>Game.</em></h3>
+          <p class="contact__lede">
+            Wir freuen uns darauf, von Ihnen zu hören. Folgen Sie uns auf Instagram oder schreiben Sie uns direkt eine E-Mail — die erste Beratung ist immer kostenlos.
+          </p>
+        </div>
+        <dl class="contact__list">
+          <div class="contact__item">
+            <dt>E-Mail</dt>
+            <dd><a href="mailto:mlstringservice@gmail.com">mlstringservice@gmail.com</a><small>Antwort innerhalb 24 Stunden</small></dd>
+          </div>
+          <div class="contact__item">
+            <dt>Instagram</dt>
+            <dd><a href="https://www.instagram.com/mlstringservice" target="_blank" rel="noopener">@mlstringservice</a><small>Werkstatt-Einblicke &amp; Setups</small></dd>
+          </div>
+          <div class="contact__item">
+            <dt>Termin</dt>
+            <dd><a href="mailto:mlstringservice@gmail.com?subject=Terminanfrage">Beratungstermin anfragen</a><small>kostenlos · 30 Minuten</small></dd>
+          </div>
+        </dl>
+      </div>
+    </div>
+  </section>
 
 </main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer__top">
+      <div class="footer__brand">
+        ML<br><em>String</em><br>Service
+      </div>
+      <div class="footer__col">
+        <h4>Leistungen</h4>
+        <ul>
+          <li><a href="#services">Besaitung</a></li>
+          <li><a href="#services">Saiten</a></li>
+          <li><a href="#services">Workshops</a></li>
+          <li><a href="#services">Express</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="#about-us">Über uns</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#contact">Kontakt</a></li>
+          <li><a href="#services">Preisliste</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>Kontakt</h4>
+        <ul>
+          <li><a href="mailto:mlstringservice@gmail.com">mlstringservice@gmail.com</a></li>
+          <li><a href="https://www.instagram.com/mlstringservice">Instagram</a></li>
+          <li><a href="#contact">Stuttgart · Konstanz · Heidelberg</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>© 2024 ML String Service. Alle Rechte vorbehalten.</span>
+      <ul>
+        <li><a href="html/privacy-policy.html">Datenschutz</a></li>
+        <li><a href="html/privacy-policy.html">AGB</a></li>
+        <li><a href="html/privacy-policy.html">Impressum</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
 <script src="js/script.js" defer></script>
 </body>
 </html>
